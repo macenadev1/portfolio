@@ -1,0 +1,30 @@
+-	Um menu de navegação 
+	-	Sobre
+	-	Curriculo
+	-	Projetos
+	-	Contato
+
+-	Perfil profissional
+
+-	Minha identificação
+
+-	Um lugar para meus projetos
+	-	Projetos escolares
+	- 	Projetos para terceiros
+	-	Projetos Pessoais
+		-	
+
+-	Um lugar para visualizar meu curriculo 
+-	Divulgar minhas redes sociais 
+
+
+Objetivo da página :
+	-	Simples e objetiva
+	-	Ter uma redação sobre meu perfil profissional (Potencial da pagina)
+	-	página ter duas viações para navegar
+	-	Mostrar os meus projetos
+	-	
+	
+
+cores : https://www.w3schools.com/colors/colors_picker.asp?color=%23ee9600
+https://www.w3schools.com/colors/colors_picker.asp?color=%23ee9600
