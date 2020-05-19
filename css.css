@@ -95,7 +95,7 @@ section.center{
 }
 
 .barra2{
-	background-color: #888888;
+	background-color: rgb(136, 136, 136, 0.8);
 	height: 100%;
 	width: 300px;
 	position: absolute;
@@ -110,7 +110,7 @@ section.center{
 }
 
 .link{
-	background-color: #494950;
+	background-color: rgba(73, 73, 80, 0.5);
 	padding: 20px;
 	font-size: 12pt;
 	transition: all .2s linear;
@@ -121,8 +121,9 @@ section.center{
 }
 
 .link:hover{
-	background-color: #050542;
+	background-color: #4770EB;
 }
+
 #check:checked ~ .barra2{
 	transform: translateX(300px);
 }
@@ -130,6 +131,9 @@ section.center{
 #check:checked ~ .barra2 nav a .link{
 	opacity: 1;
 	margin-top: 0;
+	transition-delay: .2s;
+}
+#Apresentacao:focus{
 	transition-delay: .2s;
 }
 
