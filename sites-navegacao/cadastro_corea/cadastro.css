@@ -1,0 +1,142 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Arial';
+}
+
+html,body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background-image: url(fundo_login.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+form{
+	width: 100%;
+	max-width: 550px;
+	margin: 0 auto;
+	margin-top: 6%;
+	text-align: center;
+}
+
+fieldset{
+	background: rgba(255, 255, 255,0.8);
+	border: 1px solid gray;
+	padding-top: 10%;
+}
+
+form img{
+	margin-top: -9%;
+	margin-left: 50%;
+}
+.usuario, .senha{
+	font-weight: lighter;
+	margin-right: 160px;
+	text-align: left;
+	margin-left: 10%;
+	color: gray;
+}
+
+.senha{
+	margin-top: 10px;
+}
+
+form input{
+	display: inline-block;
+	margin-top: 10px;
+	width: 80%;
+	height: 35px;
+}
+/*configuração do checkbox do menter conectado*/
+input[type="checkbox"]{
+	width:20px;
+	height: 15px;
+}
+/*aqui é para deixar a parte do mater conectado alinhado e margin*/
+.connect{
+	display: inline-block;
+	text-align: left;
+	margin-top: 3%;
+	margin-left: -68%;
+}
+/*configuração do span do manter conectado*/
+.connect span{
+	margin-left: 13px;
+	font-size: 16px;
+	color: gray;
+}
+/*parte de dentro do manter conectado para ir para o lado*/
+.con{
+	margin-left: 95px;
+}
+/*aqui é a configuração do Entrar da pagina*/
+form input[type=submit]{/*aqui é para atacar o submit*/
+	margin-top: 30px;
+	width: 40%;
+	height: 30px;
+	cursor: pointer;
+	color:white;
+	font-size: 16px;
+	border: 2px solid rgb(130,130,130);
+	background-color: rgb(140,140,140);
+}
+form input[type=text], [type=password]{
+	font-size: 20px;
+}
+.google_facebook{
+	margin-top: 30px;
+}
+
+.google{
+	background: #1a1a00;
+	padding: 1% 12%;
+	float: left;
+	display: inline-block;
+	border: 1px solid #ccc;
+	margin-top: -1.5%;
+	margin-left: 7%;
+}
+.google > h4{
+	color: white;
+	letter-spacing: 0.8px;
+	text-decoration: none;
+}
+
+.google > a{
+	text-decoration: none;
+	color: white;
+}
+
+.facebook{
+	background:#3b5998;
+	padding: 1% 12%;
+	float: right;
+	border: 1px solid #ccc;
+	margin-top: -1.5%;
+	margin-right: 7%;
+
+}
+
+.facebook{
+	color: white;
+}
+
+.espaco_final{
+	width: 100%;
+	padding-top: 1.5%;
+	
+}

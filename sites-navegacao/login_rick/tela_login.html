@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login/Rick_morty</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="tela_login.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<form>
+		<fieldset>
+			<!-- aqui é um logo da tela de login-->
+			<span class="login_top">Login</span>
+
+			<!-- aqui é a criação do usuario e login-->
+			<div class="nome_usuario">
+				<h2 class="Usuario">Usuário</h2>
+				<input type="text" name="Usuário" placeholder="Ex: Thiagomds36" required="">
+				<h2 class="Senha">Senha</h2>
+				<input type="text" name="Senha"	required="">
+			</div>
+
+			<!-- aqui é a opção para manter conectado ao login-->
+			<div class="connect">
+				<div class="con">
+					<input type="checkbox" name="conectado" value="conectado"><span>Manter conectado</span>
+				</div>
+			</div>
+
+			<!-- aqui é onde clica para entrar em sua conta já com o value-->
+			<div>
+				<input type="submit" name="acao" value="Entrar">
+			</div>
+
+			<!-- aqui é a opção quando esqueceu a senha ou quer criar um cadastro-->
+			<div class="conta">
+				<div class="inscreva">
+					<span>Não tem uma conta? <a href="">Crie uma!</a></span>
+				</di>
+				<div>
+					<a href=""><span>Esqueci minha senha</span></a>
+				</div>	
+			</div>
+		</fieldset>
+	</form>
+
+</body>
+</html>

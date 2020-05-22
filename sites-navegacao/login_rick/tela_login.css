@@ -1,0 +1,100 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height: 100%;
+}
+/*formulario com suas configurações*/
+form{
+	width: 100%;
+	max-width: 450px;
+	margin: 130px auto;
+	text-align: center;
+}
+/*background da pagina*/
+body{
+	background-image: url(papel_parede.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+}
+/*Icone de login que esta no começo da pagina*/
+.login_top{
+	font-family: 'Open Sans';
+	margin-top: 25px;
+	margin-left: 250px;
+	font-size: 20px;
+	color: black;
+	border: 2px solid #ccc;
+  	border-radius: 5px;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	background-color: gray;
+
+}
+ /* aqui é o top do usuario e senha*/
+.nome_usuario{
+	margin-top: 30px;
+}
+
+/*aqui é o fundo do local de usuario e senha*/
+fieldset{
+	background: rgba(255, 255, 255,0.8);
+}
+/*configuração do h2 do usuario e senha*/
+.Usuario,.Senha{
+	font-weight: lighter;
+	margin-right: 160px;
+}
+/*distanciamento da margin do top da senha*/
+.Senha{
+	margin-top: 10px;
+}
+
+/* configuração do input da pagina*/
+form input{
+	display: inline-block;
+	margin-top: 10px;
+	width: 60%;
+	height: 30px;
+}
+/*configuração do checkbox do menter conectado*/
+input[type="checkbox"]{
+	width:20px;
+	height: 15px;
+}
+/*aqui é para deixar a parte do mater conectado alinhado e margin*/
+.connect{
+	display: inline-block;
+	text-align: left;
+	margin-top: 5px;
+}
+/*configuração do span do manter conectado*/
+.connect span{
+	margin-left: 13px;
+	font-size: 16px;
+	color: gray;
+}
+/*parte de dentro do manter conectado para ir para o lado*/
+.con{
+	margin-left: 95px;
+}
+/*aqui é a configuração do Entrar da pagina*/
+form input[type=submit]{/*aqui é para atacar o submit*/
+	margin-top: 30px;
+	width: 140px;
+	height: 40px;
+	cursor: pointer;
+	color:black;
+	font-size: 16px;
+	border: 2px solid rgb(130,130,130);
+	background-color: rgb(140,140,140);
+}
+/*aqui é a margin do inscrever ou esqueci a senha*/
+.conta{
+	margin-top: 30px;
+	margin-left: 200px;
+	margin-bottom:
+}

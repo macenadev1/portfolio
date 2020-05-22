@@ -1,0 +1,84 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html, body{
+	height: 100%;
+}
+form{
+	width: 96%;
+	max-width: 600px;
+	margin: 30px auto;
+	text-align: center;
+}
+form  legend{
+	text-align: left;
+	color: gray;
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+form input[type=text]{
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	width: 80%;
+	padding: 10px 13px;
+}
+
+form input[type=text]:focus{
+	color: white;
+	background-color: black;
+}	
+
+form select{
+	width:calc(80% + 26px);/*com isto as portas do select é para dentro 
+	então não vai atingir 100% fora como os outros form.
+	para isto colocamos a proriedade calc e colocamos o tanto de 
+	pixel que falta para completar os 100%.*/
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding: 10px 13px;
+	display: inline-block;
+}
+form h2{
+	margin-top: 20px;
+}
+
+.input{
+	display: inline-block;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.input span{
+	margin-left: 13px;
+	font-size: 16px;
+	color: gray;
+}
+
+form select option[disabled]{/*colocar em laranja onde a opão 
+	seja disabled*/
+	color: orange;
+}
+
+form input[type=submit]{/*aqui é para atacar o submit*/
+	margin-top: 30px;
+	width: 140px;
+	height: 40px;
+	cursor: pointer;
+	color:black;
+	font-size: 16px;
+	border: 2px solid rgb(130,130,130);
+	background-color: rgb(140,140,140);
+}
+
+form textarea{
+	border:1px solid gray;
+	margin-top: 30px;
+	width: 80%;
+	height: 140px;
+	padding: 10px 13px;
+	resize: none;
+}

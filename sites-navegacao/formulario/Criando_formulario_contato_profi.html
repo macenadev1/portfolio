@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario profissional</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Criando_formulario_contato_profi.css">
+</head>
+<body>
+
+	<form>
+		<fieldset><!--quer dizer que queremos criar um grupo de form.-->
+			<legend>Cadastro</legend><!-- aqui é para criar uma legenda para o grupo do formuklario.-->
+			<div><input type="text" name="nome" placeholder="Digite seu nome"></div>
+			<div><input type="text" name="email" placeholder="Digite seu E-mail"></div>
+			<select name="lista">
+				<option selected disabled>Qual sua idade:</option><!--como aqui é a pergunta vou desabilitar para nao ser selecionavel e apenas mostrar como leitura-->
+				<option value="20">20</option>
+				<option value="30">30+</option>
+				<option value="60">60+</option>
+			</select>
+			<h2>Qual sua cidade:</h2>
+			<div class="input">
+				<div>
+					<input type="radio" name="cidade[]" value="florianopolis"><span>Florianopolis</span>
+				</div>
+				<div>
+					<input type="radio" name="cidade[]" value="São Paulo"><span>São Paulo</span>
+				</div>
+				<div>
+					<input type="radio" name="cidade[]" value="Rio de Janeiro"><span>Rio de Janeiro</span>
+				</div>
+
+			<h2>O que você gosta de comer::</h2>
+			<div class="input">
+				<div>
+					<input type="checkbox" name="cidade" value="Salad"><span>Salad</span>
+				</div>
+				<div>
+					<input type="checkbox" name="cidade" value="Meat"><span>Meat</span>
+				</div>
+				<div>
+					<input type="checkbox" name="cidade" value="Cookies"><span>Cookies</span>
+				</div>
+				
+			</div>
+
+			<textarea name="Observação" placeholder="Possui alguma Observação?"></textarea><!-- plauceholder é para você deixar uma mensagem dentro do input tipo invisivel para ser apagado-->
+
+			<div>
+				<input type="submit" name="acao" value="Enviar">
+			</div>
+
+		</fieldset>
+	</form>
+
+</body>
+</html>
