@@ -8,6 +8,7 @@
 
 html,body{
 	height: 100%;
+	background:	rgba(242, 242, 242,.6)	;
 }
 @font-face {
     font-family: 'franklingothic-bookit';
@@ -45,7 +46,7 @@ section.center{
 .navegacao{
 	float: right;
 	margin-top: -65px;
-	margin-right: 150px;
+	margin-right: 200px;
 }
 
 .navegacao a{
@@ -64,9 +65,14 @@ section.center{
 		
 
 }
+.github{
+	margin-left: -50px;
+	margin-top: 75px;
+}
 
 .linkedin{
 	margin-right: 85px;
+	margin-top: -45px;
 
 }
 .facebook{
@@ -220,7 +226,7 @@ article p {
 
  .img{
 	float: right;
-	margin-top: -320px;
+	margin-top: -350px;
 	margin-right: 120px;
 }
 main.main2{
@@ -310,6 +316,9 @@ section.box section{
     	width: 100%;
 
 	}
+	html,body{
+		background-color: white;
+	}
 		
 }
 
@@ -322,14 +331,14 @@ section.box section{
     	padding-top: 30px;
 	}
 	.asd{
-		width: 200px;
+		width: 100%;
+		max-width: 150px;
+		height: auto;
 	}
 	.email,.telefone h3{
 		width: 100%;
 		font-size: 14px;
 		margin: 0 auto;
-
-
 	}
 	.marca{
 		font-size: 24px;
@@ -412,7 +421,7 @@ section.box section{
 	.redes-sociais{
 		float: none;
 		display: inline-block;
-		padding-left: 20px;
+		padding-left: 30px;
 	}
 
 	.linkedin{
@@ -431,6 +440,10 @@ section.box section{
 	.barra_lateral{
 		display: block;
 	}
+
+	.barra_lateral label{
+		margin-left: -30px;
+	}
 	.barra2{
 		height: 100%;
 		width: 200px;
@@ -442,14 +455,6 @@ section.box section{
 	.barra2{
 		background-color: rgb(136, 136, 136, 0.8);
 	}
-	
-	
-
-	
-	
-
-
-
 }
 
 
