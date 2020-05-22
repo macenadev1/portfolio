@@ -1,0 +1,281 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Arial';
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+	overflow-x: hidden;
+}
+.clear{
+	clear: both;
+}
+
+.center{
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+header{
+	background-color: #3b5998;
+	padding: 20px 0;
+}
+
+.logo{
+	float: left;
+	color: white;
+}
+
+.logo h2{
+	font-size: 40px;
+	margin-left: 40px;
+
+}
+form.form-login{
+	float: right;
+}
+
+form.form-login .form-element{
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.form-element > p {
+	color: white;
+	font-size: 14px;
+}
+
+.form-element input[type=email],
+.form-element input[type=password]{
+	margin-top: 4px;
+}
+
+.form-element input[type=submit]{
+	background-color: #476bb8;
+	cursor: pointer;
+	color: white;
+	border: 0;
+	padding: 3px 5px;
+	font-weight: bold;
+	border: 2px solid #476bb8;
+}
+.form-element input[type=submit]:hover{
+	background-color: #395693;
+}
+
+.main{
+	background: #dee1ed;
+	padding: 40px 0;
+
+}
+.img-pessoas h3{
+	width: 65%;
+	color: #0e385f;
+}
+
+.img-pessoas{
+	float: left;
+	width: 60%;
+
+}
+.img-pessoas img{
+	max-width: 100%;
+}
+
+.abrir-conta{
+	width: 40%;
+	float: left;
+}
+
+.abrir-conta h2{
+	color: #333;
+	font-size: 36px;
+}
+
+.abrir-conta h3{
+	font-size: 21px;
+	color:#1d2129;
+	font-weight: normal;
+	margin-top: 8px;
+}
+
+.criar-conta{
+	margin-top: 10px;
+}
+
+.w50{
+	width: 50%;
+	float: left;
+	padding: 0 5px;
+}
+.w100{
+	padding: 0 5px;
+	width: 100%;
+	float: left;
+}
+
+.criar-conta input{
+	width: 100%;
+	margin-top: 8px;
+}
+
+.criar-conta input[type=email],
+.criar-conta input[type=text],
+.criar-conta input[type=password]{
+	height: 40px;
+	border: 1px solid #b6c4e2;
+	padding-left: 10px;
+	font-size: 18px;
+	border-radius: 8px;
+}
+
+.criar-conta input[type=submit]{
+	height: 40px;
+	background-color: #578b41;
+	color: white;
+	cursor: pointer;
+	border: 0;
+	border: 1px solid #578b41;
+	width: 100%;
+	max-width: 200px;
+	font-size: 19px;
+	border-radius: 8px;
+}
+ 
+.w100 > h4{
+	margin-top: 20px;
+	font-size: 16px;
+	color: #90949c;
+}
+
+form select.nascimento{
+	float: left;
+	margin-top: 5px;
+	width: 55px;
+	height: 30px;
+}
+.input-radio{
+	float: left;
+	width: 33.3%;
+}
+.genero{
+	font-size: 16px;
+	font-weight: bold;
+}
+.input-radio h2{
+	display:inline-block;
+	font-size: 18px;
+	color: #1d2129;
+	font-weight: normal;
+	padding: 10px 3px;
+	margin: 0 auto;
+
+}
+.input-radio [type=radio]{
+	width: auto; !important;
+}
+
+.span_cadastre{
+	width: 80%;
+	display: block;
+	margin: 1em 0;
+	color: #777;
+	font-size: 11px;
+}
+.pag_celebridade{
+	color:#666;
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+.pag_celebridade a{
+	text-decoration: none;
+	color: #385898;
+}
+footer section.center1{
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 2%;
+	margin: 0 auto;
+	margin-right: 0px;
+
+}
+footer nav ul li{
+	display: inline-block;
+	color:#385898;
+	cursor: pointer;	
+	list-style-type: none;
+	white-space: nowrap;
+	font-size: 12px;
+	padding: 4px;
+	
+
+}
+.first-li{
+	cursor: text;
+	color: rgba(115, 115, 115)
+}
+
+
+footer div.linha{
+	border-top:1px solid rgba(115, 115, 115,0.3);
+}
+
+.footer h4{
+	font-size: 13px;
+	font-weight: normal;
+	padding-top: 5px;
+
+}
+
+@media screen and (max-width: 768px){
+	.logo{
+		width: 100%;
+		text-align: center;
+	}
+	form.form-login{
+		width: 100%;
+		text-align: center;
+		float: none;
+		display: inline-block;
+	}
+	.form-element{
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+	}
+	.form-element input[type=email],
+	.form-element input[type=password]{
+		margin-top: 4px;
+		border:0;
+		width: 100%;
+		max-width: 300px;
+
+	}
+	.img-pessoas{
+		display: none;/*aqui não vai aparecer a 
+		a imagem*/
+	}
+	.abrir-conta{
+		width: 100%;
+		margin-right: 0;
+	}
+	footer nav ul li{
+		width: 40%;
+		text-align: center;
+		margin-top: 2%;
+	}
+	section.footer{
+		text-align: center;
+		margin-top: 2%;
+	}
+	.w101{
+		width: 100%;
+
+	}
+}
