@@ -1,0 +1,361 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans';
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html,body{
+	height: 100%;
+}
+.clear{ /*criamos uma div para colocar clear quando usarmos 
+	float e no final da pagina ficar sem espaço. é só 
+	colocar embaixo da div onde o bug ficou.*/
+	clear: both;
+}
+.center{
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header{
+	width: 100%;
+	padding: 0 2%;
+	height: 75px;
+	background-color: #212343;
+}
+
+.header img{
+	margin: 15px;
+}
+
+#check{
+	display: none;
+}
+#icone{
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+}
+
+
+.barra2{
+	background-color: #888888;
+	height: 100%;
+	width: 300px;
+	position: absolute;
+	transition: all .2s linear;
+	left: -300px;
+	
+}
+
+.barra2 nav{
+	width: 100%;
+	position: absolute;
+	top: 60px;
+}
+
+.link{
+	background-color: #494950;
+	padding: 20px;
+	font-size: 12pt;
+	transition: all .2s linear;
+	color: white;
+	border-bottom: 2px solid gray;
+	opacity: 0;
+	margin-top: 200px;
+}
+
+.link:hover{
+	background-color: #050542;
+}
+
+#check:checked ~ .barra2{
+	transform: translateX(300px);
+}
+
+#check:checked ~ .barra2 nav a .link{
+	opacity: 1;
+	margin-top: 0;
+	transition-delay: .2s;
+}
+.banner{
+	width: 100%;
+	padding: 0 2%;
+	height: 557px;
+	background-image: url(images/header_bg.png);
+	background-size: cover;/*aqui estou dizendo que cubra toda a area*/
+	background-position: center; /* aqui eu quero que a posição seja no centro*/
+}
+.banner > .center{
+	height: 100%;
+}
+
+.form{
+	box-sizing: border-box;
+	padding: 10px;
+	width: 400px;
+	height: calc(100% + 30px); /*porcentagem do height sempre precisa herdar de um antes*/
+	background-color: white;
+	position: relative;
+	top: -15px;
+	border: 8px solid;
+	border-color: rgba(120,120,120,0.5);
+	background-clip: padding-box; /*aqui a nossa borda fica transparente*/
+	/*background-origin: tem o mesmo conceito que o clip, mas é para imagens*/
+	float: right;
+}
+
+.form > h2{
+	font-weight: normal;
+	color: #999999;
+	font-size: 21px;
+}
+.form > h2:hover{
+	color: black;
+}
+
+.input{
+	margin-top: 20px;
+
+}
+
+.input span, .form p{
+	display: inline-block;
+	width: 100%;
+	color: #BBBBBB;
+	font-size: 17px;
+}
+
+.form p{
+	margin: 20px 0;
+}
+.form .input_submit{
+	text-align: center;
+	margin-top: 15px;
+
+}
+.form input[type=submit]{
+	display: inline-block;
+	width: 280px;
+	height: 56px;
+	background-color: #363A6D;
+	font-size: 25px;
+	color: white;
+	cursor: pointer;
+}
+
+.form input[type=submit]:hover{
+	background-color: #323665;
+}
+
+.input input[type=text]{
+	margin-top: 8px;
+	width: 344px;
+	height: 55px;
+	border: 1px solid #ccc;
+	font-size: 20px;
+}
+
+.list{
+	padding: 30px;
+	margin-top: 100px;
+	float: left;
+	width: 519px;
+	height: 270px;
+	background-color: rgba(33,35,67,0.7);
+}
+
+.list ul{
+	list-style-position: inside; /*aqui é para ficas pro lado de dentro da imagem*/
+}	
+
+.list > ul li{
+	color: white;
+	margin-top: 18px;
+}
+
+.opcao_geral{
+	display: inline-block;
+	margin-top: 10px;
+
+}
+
+.opcao_contato1{
+	display: inline-block;
+}
+
+.opcao_contato2{
+	display: inline-block;
+	margin-left: 13px;
+}
+
+.opcao_contato3{
+	display: inline-block;
+	margin-left: 13px;
+}
+
+.text_apresentacao{
+	width: 100%;	
+	padding: 40px 2%;
+	background-color: #DDDDDD;
+	text-align: center;
+}
+
+.text_apresentacao h2{
+	font-weight: normal;
+}
+
+.text_apresentacao p{
+	margin: 15px 0;
+	max-width: 768px;
+	width: 100%;
+	display: inline-block;
+	text-align: justify;
+}
+.flecha{
+	position: relative; /*quando você coloca o relative você pode
+	manipular os lados top,left, right */
+	top: 60px;
+	left: 50%; /* aqui vai ficar no meio */
+	margin-left: -20px;
+	width: 40px;
+	height: 40px;
+	background-image: url(images/arrow.png);
+	background-size: 100% 100%; /*para mostrar toda a imagem*/
+
+}
+
+.apresentacao_projetos{
+	padding: 150	px 2%;
+
+}
+
+.apresentacao_projetos h2{
+	text-align: center;
+	color: #462663;
+	font-weight:normal;
+}
+
+.projetos{
+	margin-top: 100px;
+}
+
+.projetos{
+	text-align: center;
+}
+
+.projeto_um{
+	float: left;
+	width: 33.3%;
+	padding: 30px;
+}
+
+.projeto_um img{
+	width: 70px;
+}
+
+.projeto_um p{
+	padding: 30px 25px;
+	text-align: justify;
+}
+
+.footer{
+	padding: 20px 0;
+	border-top: 2px solid #888888;
+	text-align: center;
+	color: #888888;
+
+}
+
+.footer p{
+	margin-top: 8px;
+}
+
+@media screen and (max-width: 1024px){
+	.header{
+		height: auto;
+		width: 100%;
+		padding: 15px 0;
+		text-align: center;
+	}
+	.header img{
+		margin:0;
+	}
+	.banner{
+		width: 100%;
+		height:auto;
+		text-align: center;
+	}
+	.form{
+		max-width: 400px;
+		padding: 10px;
+		width: 90%;
+		height: 100%;
+		top:0;
+		display: inline-block;
+		float: none;
+		margin-top: 30px;
+		z-index: 2;
+	}
+
+	.list{
+		padding: 30px 0;
+		float: none;
+		margin-top: 30px;
+		display: inline-block;
+		width: 90%;
+		max-width: 500px;
+		height:auto;
+		
+
+	}
+	.form .input_submit{
+		text-align: center;
+		margin-top: 15px;
+	
+	}
+	.form input[type=submit]{
+		max-width: 280px;
+		height: 56px;
+		width: 100%;
+	}
+	
+	.input input[type=text]{
+		width: 100%;
+		height: 55px;
+	}
+	.barra2{
+		width: 100%;
+		max-width: 200px;
+		height: 100%;
+
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	.projeto_um{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		max-width: 600px;
+		padding: 30px 0;
+	}
+	.text_apresentacao p{
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	.barra_lateral{
+		z-index: 1;
+	}
+	.barra2{
+		width: 100%;
+		max-width: 200px;	
+		height: 100%;
+	}
+}
+

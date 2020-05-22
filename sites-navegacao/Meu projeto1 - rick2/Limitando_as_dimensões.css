@@ -1,0 +1,418 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html,body{
+	height:100%;
+}
+
+/*
+.header{
+	width: 100%; /* aqui é a largura de 100% porcentro da pagina*/
+/*	min-width: 1280px; /* é a mesma coisa que você colocar width 100% da tela*/
+/*	height: 200px; /* aqui é a altura do conteudo na pagina*/
+/*	background: gray;
+}	
+*/
+
+/*.article{
+	margin: 0 auto;
+	width: 1280px; /* 1280 pixel é o tamanho padrão da div e não pega 100%*/
+	/*height: 600px; /* altura de 600px */
+	/*max-height: 20% ; /* O segundo é o max- e por ultimo é o height*/
+	/*min-height: 70%; /* O min- vem primeiro do que os outros (hierarquia)*/
+	/*background: blue;
+}
+	*/
+
+body{
+	background-image: url(rick_legal.png);
+	background-attachment: fixed;
+}
+
+@media screen and (min-width: 601px){
+	.header > h2{
+	position: absolute;
+	margin-left: 25px;
+	margin-top: 25px; 
+	border: 2px solid;
+  	border-radius: 5px;
+  	padding: 5px;
+	background: gray;	
+	}
+}
+
+div.header{
+	position: fixed;
+	width: 100%;
+	height: 15%;
+	background: blue;
+}
+.header > h2{
+
+	position: absolute;
+	margin-left: 25px;
+	margin-top: 25px; 
+	border: 2px solid;
+  	border-radius: 5px;
+  	padding: 5px;
+	background: gray;
+
+}
+div.header nav{
+	padding-top: 30px;
+	font-size: 21px;
+	text-align: center;
+}
+
+div.header a{
+	margin: 30px;
+	color: white;
+	text-decoration: none;
+}
+div.header a:hover{
+	border-style: ridge;
+	padding: 5px;	
+	background-color: #6600cc;
+	opacity: 0.8;
+	transition: opacity 0.2s;
+}
+div.header nav > img{
+	position: absolute;
+	width: 100px;
+	margin-left: 100px;
+	margin-top: -24px;
+}
+
+@media screen and (max-width: 568px){
+	nav a{
+		width: 100%;
+	}
+}
+
+div.sub-menu{
+	width: 100%;
+	height: 25%;
+	background: #0000b3;
+	animation-name: example;
+	animation-duration: 2s;
+	animation-iteration-count: 100;
+}
+
+@keyframes example{
+	form{backgorund-color:#0000b3;}
+	to {background-color: blue;}
+}
+
+div.artigo{
+	width: 70%;
+	height: 3340px;
+	margin: auto;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	background: rgb(204, 204, 255);
+	display: block;
+
+}
+.sobre{
+	margin-bottom: 10px solid black;
+}
+
+.artigo > h2{
+	text-align: center;
+}
+.artigo > h3{
+	color: #000000;
+	font-style: italic;
+	font-weight: lighter;
+	margin-left: 20px;
+	margin-top: 60px;
+	position: absolute;
+}
+
+
+.artigo > p{
+	color: #404040;
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 1.7;
+	padding: 15px;
+	margin-top: 80px;
+	text-align: center;	
+	text-align: justify;
+}
+
+video{
+	width: 40%;
+	height: 10%;
+	margin-left: 2%;
+	border: 3px solid black;
+	background-size:cover;
+
+}
+.artigo > figcaption{
+	position: absolute;
+	width: 350px;
+	margin-left: 15px;
+}
+
+figcaption.comentario1:hover{
+	width: 400px;
+	height: 200px;	
+	opacity: 0.8;
+	transition: opacity 0.8s;
+}
+
+figcaption.comentario2{
+	margin-left: 420px;
+}
+figcaption.comentario2:hover{
+	width: 400px;
+	height: 200px;	
+	opacity: 0.8;
+	transition: opacity 0.8s;
+}
+h1.Ver_videos{
+	width: 3%;
+	color: white;
+	background-color: green;
+	padding: 7px;	
+	writing-mode: vertical-rl;
+	position: absolute;
+	margin-left: 62%;
+	margin-top: -210px;
+	border: 2px outset green;
+	border-radius: 12px;
+} 
+
+h1.ver_galeria{
+	width: 3%;
+	color: white;
+	background-color: green;
+	padding: 7px;	
+	writing-mode: vertical-rl;
+	position: absolute;
+	margin-left: 62%;
+	margin-top: -380px;
+	border: 2px outset green;
+	border-radius: 12px;
+}
+
+.video_4temp{
+	width: 70%;
+	height: 10%;
+	margin-left: 2%;
+	border: 3px solid black;
+	background-size:cover;
+	box-sizing: border-box;
+}
+h1.ver_novidades{
+	width: 3%;
+	color: white;
+	background-color: green;
+	padding: 7px;	
+	writing-mode: vertical-rl;
+	position: absolute;
+	margin-left: 62%;
+	margin-top: -220px;
+	border: 2px outset green;
+	border-radius: 12px;
+}
+
+.produto1> img{
+	width: 200px;
+	height: 250px;
+	margin-left: 2%; 
+	border: 3px solid black;
+}
+
+.produto1 > figcaption{
+	width: 200px;
+	height: 250px;
+	margin-left: 2%;
+}
+img.logo_sub{
+	position: absolute;
+	width: 40px;
+	height: 30px;
+	margin-top: -310px;
+	margin-left: 210px;
+}
+img.logo_sub1{
+	position: absolute;
+	width: 40px;
+	height: 30px;
+	margin-top: -310px;
+	margin-left: 480px;
+}
+img.logo_sub2{
+	position: absolute;
+	width: 40px;
+	height: 30px;
+	margin-top: -310px;
+	margin-left: 750px;
+
+}
+
+.comprar{
+	width: 12%;
+	color: white;
+	background-color: green;
+	padding: 7px;	
+	position: absolute;
+	margin-left: 2%;
+	margin-top: -210px;
+	border: 2px outset green;
+	border-radius: 12px;
+	text-align: center;
+}
+.comprar1{
+
+	width: 12%;
+	color: white;
+	background-color: green;
+	padding: 7px;	
+	position: absolute;
+	margin-left: 21.5%;
+	margin-top: -210px;
+	border: 2px outset green;
+	border-radius: 12px;
+	text-align: center;
+
+}
+.comprar2{
+
+	width: 12%;
+	color: white;
+	background-color: green;
+	padding: 7px;	
+	position: absolute;
+	margin-left: 41.3%;
+	margin-top: -210px;
+	border: 2px outset green;
+	border-radius: 12px;
+	text-align: center;
+}
+
+.separador{
+	position: absolute;
+	height: 360px;
+	margin-left: 250px;
+	margin-right: 62%;
+	margin-top: -630px;
+	border-right: 1px solid gray;
+}
+
+div.separador1{
+	position: absolute;
+	height: 360px;
+	margin-left: 520px;
+	margin-right: 62%;
+	margin-top: -630px;
+	border-right: 1px solid gray;
+}
+.separador2{
+	position: absolute;
+	height: 360px;
+	margin-left: 790px;
+	margin-right: 62%;
+	margin-top: -630px;
+	border-right: 1px solid gray;
+}
+.separador3{
+	position: absolute;
+	width: 943px;
+	border: 1px solid gray;
+	margin-top:-210px;
+
+}
+
+.produto1 > img:nth-of-type(2){
+	margin-left: 60px;
+}
+.produto1 > img:last-of-type{
+	margin-left: 60px;
+}
+
+.produto1 > figcaption > h4:nth-of-type(2){
+	width: 200px;
+	height: 250px;
+	margin-left: 270px;
+	margin-top: -35px;
+}
+.produto1 > figcaption > h4:last-of-type{
+	width: 200px;
+	height: 250px;
+	margin-left: 540px;
+	margin-top: -248px;
+}
+div.rodape{
+	background-color: gray;
+	margin-bottom: 100px;
+	width: 100%;
+	height: 200px;
+}
+
+div.feedback > h4{
+	position: absolute;
+	margin-top: 8px;
+	margin-left: 1%;
+	border: 2px solid white;
+	border-radius: 12px;
+	padding:5px;
+	background-color: purple;
+}
+div.feedback > input{
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 1%;
+	border: 1px solid white;
+	border-radius: 12px;
+	padding:5px;
+}
+
+.feedback > h4:nth-of-type(2){
+	position: absolute;
+	margin-top: 8px;
+	margin-left: 22%;
+	border: 1px solid white;
+	border-radius: 12px;
+	padding:5px;
+}
+.feedback > h4:nth-of-type(3){
+	position: absolute;
+	margin-top: 8px;
+	margin-left: 54%;
+	border: 1px solid white;
+	border-radius: 12px;
+	padding:5px;	
+}
+
+.feedback > h5{
+	position: absolute;
+	margin-top: 8px;
+	margin-left: 28.5%;
+	border: 1px solid white;
+	border-radius: 12px;
+	background-color: yellow;
+	padding:5px;
+}
+
+.feedback > h5:nth-of-type(2){
+	position: absolute;
+	margin-top: 8px;
+	margin-left: 62%;
+	border: 1px solid white;
+	border-radius: 12px;
+	background-color: yellow;
+	padding:5px;
+}
+div.feedback{
+	box-sizing: border-box;
+	position: absolute;
+	background-color: gray;
+	width: 945px;
+	height: 100px;
+	margin-top: -160px;
+}
