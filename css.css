@@ -200,6 +200,25 @@ header.header2{
 	font-size: 24px;
 	color: #CCCCCC;
 }
+.feedback{
+	position: fixed;
+	top: 80%;
+	right: 2%;
+	text-align: center;
+	text-decoration: none;
+}
+.feedback h3{
+	font-size: 14px;
+	font-family: 'Roboto Slab', serif;
+	color: black;
+}
+.img-feedback{
+	opacity: 0.6;
+}
+.img-feedback:hover{
+	opacity: 1;
+}
+
 
 header section.titulo{
 	margin-top: 80px;
@@ -302,11 +321,14 @@ section.box section{
 
 .contato div.email  div {
 	display: inline-block;
+	color:#404040;
 }
 
 .contato div.telefone  div {
 	display: inline-block;
-	/*margin-right: 80px;*/
+}
+.telefone h3{
+	color: #404040;
 }
 
 @media screen and (max-width: 1024px){
