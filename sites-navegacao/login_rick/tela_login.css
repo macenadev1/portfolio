@@ -1,30 +1,32 @@
 *{
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 html,body{
 	height: 100%;
+}
+.center{
+	padding: 0 2%;
+	text-align: center;
+	margin: 0 auto;
 }
 /*formulario com suas configurações*/
 form{
 	width: 100%;
 	max-width: 450px;
-	margin: 130px auto;
 	text-align: center;
+	margin: 50px auto;
 }
 /*background da pagina*/
 body{
 	background-image: url(papel_parede.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	overflow: hidden;
-
 }
 /*Icone de login que esta no começo da pagina*/
-.login_top{
+.login_top h3{
 	font-family: 'Open Sans';
-	margin-top: 25px;
-	margin-left: 250px;
 	font-size: 20px;
 	color: black;
 	border: 2px solid #ccc;
@@ -32,9 +34,14 @@ body{
   	padding-left: 20px;
   	padding-right: 20px;
   	background-color: gray;
-
+  	display: inline-block;
+}
+.login_top{
+	text-align: right;
+	margin-right: 20px;
 }
  /* aqui é o top do usuario e senha*/
+
 .nome_usuario{
 	margin-top: 30px;
 }
@@ -55,7 +62,6 @@ fieldset{
 
 /* configuração do input da pagina*/
 form input{
-	display: inline-block;
 	margin-top: 10px;
 	width: 60%;
 	height: 30px;
@@ -97,4 +103,26 @@ form input[type=submit]{/*aqui é para atacar o submit*/
 	margin-top: 30px;
 	margin-left: 200px;
 	margin-bottom:
+}
+
+@media screen and (max-width: 807px){
+	form {
+		width: 100%;
+		max-width: 300px;
+		margin: 15px auto;
+		text-align: 0;
+	}
+	form input{
+		margin-top: 10px;
+		width: 100%;
+		max-width: 250px;
+		height: 30px;
+	}
+	.conta{
+		width: 100%;
+		margin: 20px auto;
+	}
+	
+
+
 }
