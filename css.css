@@ -477,6 +477,9 @@ section.box section{
 	.barra2{
 		background-color: rgb(136, 136, 136, 0.8);
 	}
+	.img-feedback img{
+		width: 40px;
+	}
 }
 
 
