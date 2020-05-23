@@ -3,6 +3,7 @@
 	margin: 0;
 	font-family: 'Open Sans';
 	text-decoration: none;
+	box-sizing: border-box;
 }
 
 html,body{
@@ -121,4 +122,18 @@ body{
 .lists ul li{
 	list-style-type: none;
 	display: inline;
+}
+@media screen and (max-width: 800px;){
+	.img > img{
+		width: 100%;
+		max-width: 150px;
+		height: 80px;
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+	.links_menu_login_cadastro a{
+		width: 100%;
+		margin: 0 auto;
+	}
 }

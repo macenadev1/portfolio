@@ -109,7 +109,7 @@ form input[type=submit]{/*aqui é para atacar o submit*/
 	form {
 		width: 100%;
 		max-width: 300px;
-		margin: 15px auto;
+		margin: 50px auto;
 		text-align: 0;
 	}
 	form input{
