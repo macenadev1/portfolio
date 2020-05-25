@@ -51,9 +51,14 @@
 	<section class="center">
 		<a href="https://drinkss1.github.io/portfolio-thiago/"><img class="seta" src="../images/seta.png"></a>
 	</section>
+	<h1>Cadastrar Usuário</h1>
+		<?php
+		if(isset($_SESSION['msg'])){
+			echo $_SESSION['msg'];
+			unset($_SESSION['msg']);
+		}
 
-
-	<form>
+	<form method="POST" action="../back-end.php">
 		<section class="center">
 			<form>
 				<fieldset>

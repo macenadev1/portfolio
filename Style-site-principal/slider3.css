@@ -147,6 +147,24 @@ section.center{
 .cega{
 	padding-top: 15px;
 }
+.feedback{
+	position: fixed;
+	top: 80%;
+	right: 2%;
+	text-align: center;
+	text-decoration: none;
+}
+.feedback h3{
+	font-size: 14px;
+	font-family: 'Roboto Slab', serif;
+	color: black;
+}
+.img-feedback{
+	opacity: 0.6;
+}
+.img-feedback:hover{
+	opacity: 1;
+}
 
 @media screen and (max-width: 807px){
 	.bem-vindo h3{
@@ -184,6 +202,9 @@ section.center{
 	}
 	.seta{
 		width: 30px;
+	}
+	.img-feedback img{
+		width: 40px;
 	}
 
 
