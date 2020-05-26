@@ -54,11 +54,12 @@ section.center{
 	font-size: 24px;
 	color: #CCCCCC;
 	padding: 8px; 
+	transition: 0.7s;
 }
 .navegacao a:hover{
 	border-bottom: 2px solid white;
-}
 
+}
 .redes-sociais{
 	float: right;
 	margin-top: -75px;
@@ -153,7 +154,7 @@ header.header2{
 header.header2{
 	animation-name: example;
 	animation-duration: 2s;
-	animation-iteration-count: 1000;
+	animation-iteration-count: infinite;
 }
 
 @keyframes example{
@@ -207,6 +208,9 @@ header.header2{
 	text-align: center;
 	text-decoration: none;
 }
+.feedback img:hover{
+	width: 60px;
+}
 .feedback h3{
 	font-size: 14px;
 	font-family: 'Roboto Slab', serif;
@@ -243,7 +247,7 @@ article p {
 	font-size: 18px;
 }
 
- .img{
+.img{
 	float: right;
 	margin-top: -350px;
 	margin-right: 120px;
@@ -329,6 +333,15 @@ section.box section{
 }
 .telefone h3{
 	color: #404040;
+}
+.asd:hover{
+	box-shadow: 3px 3px 5px 5px rgba(38, 38, 38,.8);
+	padding: 5px;
+	transition: 1s;
+}
+.im:hover{
+	box-shadow: 3px 3px 5px 5px rgba(38, 38, 38,.8);
+	transition: 1s;
 }
 
 @media screen and (max-width: 1024px){
