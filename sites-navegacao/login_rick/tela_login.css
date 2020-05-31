@@ -13,10 +13,14 @@ html,body{
 }
 /*formulario com suas configurações*/
 form{
+	transform: translateX(-50%) translateY(-50%);
 	width: 100%;
 	max-width: 450px;
 	text-align: center;
-	margin: 50px auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: 50%;
 }
 /*background da pagina*/
 body{
@@ -115,13 +119,43 @@ form input[type=submit]{/*aqui é para atacar o submit*/
 	form input{
 		margin-top: 10px;
 		width: 100%;
-		max-width: 250px;
+		max-width: 150px;
 		height: 30px;
+		margin-left: -70px;
+		transition: 1s;
+	}
+	form input[type=text]:focus{
+		max-width: 200px;
+		margin-left: -20px;
+	}
+	form input[type=password]:focus{
+		max-width: 200px;
+		margin-left: -20px;
 	}
 	.conta{
 		width: 100%;
 		margin: 20px auto;
 	}
+	.login_top h3{
+		font-size: 18px;
+	}
+	.Usuario,.Senha{
+	 font-size: 18px;
+	}
+	input[type="checkbox"]{
+		margin-left: -120px;
+	}
+	form input[type=submit]{
+		margin: 10px auto;
+		width: 100px;
+	}
+	
+	.conta span{
+		font-size: 
+	}
+	
+
+
 	
 
 
