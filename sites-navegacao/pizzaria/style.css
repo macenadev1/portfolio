@@ -529,6 +529,9 @@ section.meio{
 		float: none;
 		display: block;
 	}
+	.form-container button{
+		margin-top: -15px;
+	}
 	.img-ultima{
 		padding-top: 10px;
 	}
