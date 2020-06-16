@@ -23,7 +23,7 @@ html,body{
 }
 
 header.header1{
-	background-color:#4770EB;
+	background: linear-gradient(to right,#0099cc ,#006080 );
 	padding-top: 106px;
 }
 
@@ -148,7 +148,7 @@ section.center{
 
 header.header2{
 	padding-top: 196px;
-	background-color: #3D6BF5;
+	background-color: #006080;
 	border-top: 1px solid #CCCCCC;
 }
 header.header2{
@@ -158,10 +158,9 @@ header.header2{
 }
 
 @keyframes example{
-	form{backgorund-color:#4770EB;}
-	to {background-color: #2559f4;}
+	form{backgorund-color:#006080;}
+	to {background-color:#0099cc;}
 }
-
 
 .sub-menu-esquerda{
 	float: left;
@@ -225,7 +224,7 @@ header.header2{
 
 
 header section.titulo{
-	margin-top: 80px;
+	padding-top: 45px;
 	font-family: 'Roboto Slab', serif;
 	font-size: 30px;
 	color: #404040;
@@ -233,6 +232,11 @@ header section.titulo{
 
 main.main1{
 	width: 100%;
+	background-image: url(images/trabalho.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
 }
 .text{
 	width: 100%;
@@ -249,12 +253,38 @@ article p {
 
 .img{
 	float: right;
-	margin-top: -450px;
+	margin-top: -350px;
 	margin-right: 120px;
+}
+.img img{
+	width: 300px;
+}
+.text h3{
+	margin-top: 15px;
+	font-size: 20px;
+	color: rgb(64, 64, 64);
+}
+.text ul{
+	list-style: inside;
+	list-style: none;
+	margin-top: 30px;
+	text-align: center;
+}
+.text ul li{
+	display: inline-block;
+}
+.text img{
+	width: 64px;
 }
 main.main2{
 	width: 100%;
-	background-color: rgba(92, 122, 214,0.1);
+	/*background-color: rgba(92, 122, 214,0.1);
+	background-image: linear-gradient(to right, blue, #ccc);*/
+	background-image: url(images/trabalho.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border-top: 1px solid #ccc;
 }
 .flecha{
 	position: relative;
@@ -385,7 +415,6 @@ section.box section{
 		display: none;
 	}
 	header section.titulo{
-		margin-top: 80px;
 		font-family: 'Roboto Slab', serif;
 		font-size: 24px;
 		color: #404040;
