@@ -27,6 +27,7 @@ $(function(){
 		//vou colocar o elemento que mede a distancia do nav aos conteudo (offset)
 			medirOtamanho = $(id).offset().top;
 			console.log(medirOtamanho);
+	
 
 		//vou animar agora andando no meu html e body da pagina
 		$("body, html").animate({
@@ -34,4 +35,25 @@ $(function(){
 			scrollTop: medirOtamanho	
 		},800);
 	});
+
+	var avisoElement = document.querySelector("#aviso");
+	avisoElement.onclick = function(){
+		var avisoElement = document.querySelector(".aviso-contato");
+		avisoElement.style.borderColor = "#CCCCCC";
+		avisoElement.style.boder = "2px";
+		avisoElement.style.backgroundColor = "#ff3333";
+		$(".aviso-contato").fadeOut(5000);
+	};
+	var avisoElement = document.querySelector("#aviso1");
+	avisoElement.onclick = function(){
+		var avisoElement = document.querySelector(".aviso-contato");
+		avisoElement.style.borderColor = "#CCCCCC";
+		avisoElement.style.boder = "2px";
+		avisoElement.style.backgroundColor = "#ff3333";
+		$(".aviso-contato").fadeOut(5000);
+	};
+
+
+
+
 });
