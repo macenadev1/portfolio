@@ -52,8 +52,45 @@ $(function(){
 		avisoElement.style.backgroundColor = "#ff3333";
 		$(".aviso-contato").fadeOut(5000);
 	};
+	
+	//1 - identificar quando o usuario usa o scroll
+	//2 - Calcular a distancia entre o topo da página e o scroll
+	//3 - Calcular a distancia entre o topo da pagina e o elemento que deseja animar 
+	//4 - comparar as duas distancias anteriores
+	//5 - Adicionar uma classe com css animation ou transition ao elemento animado
+	
+	var $projetos = $(".projeto1"),
+		animationClass = "projeto1-start";
+
+	function animeScroll(){
+		//to pegando o quanto o document(html em sí) percorreu com o scroll
+		var documentTop = $(document).scrollTop(); 
+
+		//agora eu quero que meu elemento scroll pega todos meus itens que esta em meu projeto1 com
+		// each  do jquery
+		$projetos.each(function(){
+			//ver a distancia do meu top até o meus projetos
+			// this ta fazendo referencia a minha variavel com meus projetos
+			var itemTop = $(this).offset().top;
+
+			//agora vou adcionar a classe do css que tem o anime
+			//se a altura do meu top/scroll que estou navegando for maior que a do meu item
+			// ativa os efeitos
+			if(documentTop > itemTop - 400){
+				$(this).addClass(animationClass);
+			}
+			//senão eu quero que remova a class
+			else{
+				$(this).removeClass(animationClass);
+			}
+		})
+
+	}
+	animeScroll();
+	$(document).scroll(function(){
+		animeScroll();
+	})
 
 
 
-
-});
+}); 
