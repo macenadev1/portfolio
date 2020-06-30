@@ -85,6 +85,19 @@ $(function(){
 		});	
 	};
 	animeContato();
+	
+	//sidebar celular
+	function animeContato1(){
+		var aviso = $(".aviso-contato"),
+		animarAviso = "aviso-start";
+		$("#aviso1").click(function(){
+			$(aviso).addClass(animarAviso);
+			//$(".aviso-start").fadeIn();
+			//$(aviso).removeClass(animarAviso);
+			setTimeout(function(){$(aviso).removeClass(animarAviso);},5000);
+		});	
+	};
+	animeContato1();
 	/* **********************FINALIZADO A FUNÇÃO ALERTA CONTATO************************** */ 
 
 }); 
