@@ -76,7 +76,7 @@ $(function(){
 			//agora vou adcionar a classe do css que tem o anime
 			//se a altura do meu top/scroll que estou navegando for maior que a do meu item
 			// ativa os efeitos
-			if(documentTop > itemTop - 400){
+			if(documentTop > itemTop - 430){
 				$(this).addClass(animationClass);
 			}
 			//senão eu quero que remova a class
