@@ -1,4 +1,7 @@
 $(function(){
+
+	/*///////////////AQUI É A FUNÇÃO DO ROLAMENTO SUAVE DO MENU ATÉ O OBJETIVO//////////////////////////////*/
+
 	$(".navegacao a").click(function(e){
 
 		//estou dizendo que o meu menu de navegação vai cortar oq tem efeito
@@ -26,7 +29,6 @@ $(function(){
 		var id = $(this).attr("href"),
 		//vou colocar o elemento que mede a distancia do nav aos conteudo (offset)
 			medirOtamanho = $(id).offset().top;
-			console.log(medirOtamanho);
 	
 
 		//vou animar agora andando no meu html e body da pagina
@@ -35,30 +37,9 @@ $(function(){
 			scrollTop: medirOtamanho	
 		},800);
 	});
-
-	var avisoElement = document.querySelector("#aviso");
-	avisoElement.onclick = function(){
-		var avisoElement = document.querySelector(".aviso-contato");
-		avisoElement.style.borderColor = "#CCCCCC";
-		avisoElement.style.boder = "2px";
-		avisoElement.style.backgroundColor = "#ff3333";
-		$(".aviso-contato").fadeOut(5000);
-	};
-	var avisoElement = document.querySelector("#aviso1");
-	avisoElement.onclick = function(){
-		var avisoElement = document.querySelector(".aviso-contato");
-		avisoElement.style.borderColor = "#CCCCCC";
-		avisoElement.style.boder = "2px";
-		avisoElement.style.backgroundColor = "#ff3333";
-		$(".aviso-contato").fadeOut(5000);
-	};
+	/* *****************************FINALIZADO O SCROLL SUAVE************************************ */
 	
-	//1 - identificar quando o usuario usa o scroll
-	//2 - Calcular a distancia entre o topo da página e o scroll
-	//3 - Calcular a distancia entre o topo da pagina e o elemento que deseja animar 
-	//4 - comparar as duas distancias anteriores
-	//5 - Adicionar uma classe com css animation ou transition ao elemento animado
-	
+	/* /////////////////////AQUI, ANIMANDO A CHEGADA DOS PROJETOS SUAVE COM O SCROLL/////////////////// */
 	var $projetos = $(".projeto1"),
 		animationClass = "projeto1-start";
 
@@ -90,7 +71,20 @@ $(function(){
 	$(document).scroll(function(){
 		animeScroll();
 	})
+	/* *******************************FINALIZADO ANIMAÇÃO DO PROJETO COM SCROLL****************** */ 
 
-
+	/* ///////////////////AQUI É A FUNÇÃO DO ALERTA QUANDO É CLICADO NO CONATO //////////////////// */
+	function animeContato(){
+		var aviso = $(".aviso-contato"),
+		animarAviso = "aviso-start";
+		$("#aviso").click(function(){
+			$(aviso).addClass(animarAviso);
+			//$(".aviso-start").fadeIn();
+			//$(aviso).removeClass(animarAviso);
+			setTimeout(function(){$(aviso).removeClass(animarAviso);},5000);
+		});	
+	};
+	animeContato();
+	/* **********************FINALIZADO A FUNÇÃO ALERTA CONTATO************************** */ 
 
 }); 
