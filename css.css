@@ -338,6 +338,45 @@ header.header-projetos h3{
 .cega{
 	padding-top: 60px;
 }
+
+.clientes{
+	border-top: 1px solid #CCCCCC;
+}
+
+.clientes-container{
+	width: 100%;
+	padding: 0 2%;
+	position: relative;
+}
+
+.clientes h1{
+	width: 100%;
+	margin-top: 20px;
+	font-size: 30px;
+	color: #404040;
+}
+
+.clientes-img{
+	margin-top: 30px;
+}
+
+.clientes-depoimentos{
+	width: 100%;
+	max-width: 400px;
+	height: 100px;
+	background-color: aquamarine;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 30px;
+}
+.clientes-depoimentos p{
+	background-color: #CCCCCC;
+	text-align: center;
+}
+
+
 footer{
 	border-top: 1px solid #CCCCCC;
 	padding: 30px;
