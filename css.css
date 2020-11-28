@@ -240,13 +240,13 @@ main.main1{
 }
 .text{
 	width: 100%;
-	max-width: 600px;
+	/*max-width: 600px;*/
 	margin-top: 40px;
 }
 
 article p {
 	text-align: justify;
-	color: #404040;
+	color: black;
 	font-family: 'Arial';
 	font-size: 18px;
 	line-height: 30px;
