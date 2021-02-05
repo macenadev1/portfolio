@@ -9,6 +9,8 @@ btBuscar.addEventListener("click", function(){
     
     
     xhr.addEventListener("load", function(){//aqui ele pega as informações da api
+        var status = document.querySelector("#statusBuscaPacientes");
+        status.textContent = "Aguarde, buscando pacientes...";
 
         if(xhr.status == 200){//ver o status da requisição se deu certo
             var resposta = xhr.responseText; //aqui ele pega o texto "responseText"
@@ -19,7 +21,7 @@ btBuscar.addEventListener("click", function(){
             });
         }
         else{
-            
+            status.textContent = "";
             var erroAjax = document.querySelector("#erroAjax");
             erroAjax.textContent = "Erro ao buscar os pacientes.";
             var statusErro = document.querySelector("#statusErro");
@@ -29,6 +31,7 @@ btBuscar.addEventListener("click", function(){
                 statusErro.textContent = "";
             },2000);
         }
+        status.textContent = "";
         backgroundExcluir();
         ExcluirPaciente();
     });
