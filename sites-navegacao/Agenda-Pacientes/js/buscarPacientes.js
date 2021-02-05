@@ -31,7 +31,7 @@ btBuscar.addEventListener("click", function(){
                 statusErro.textContent = "";
             },2000);
         }
-        status.textContent = "";
+        //status.textContent = "";
         backgroundExcluir();
         ExcluirPaciente();
     });
