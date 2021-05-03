@@ -303,7 +303,7 @@ header.header-projetos h3{
 }
 
 .article-projetos section{
-	width: 33.33%;
+	width: 50%;
 	margin-right: -4px;/*tirando o espaçamento do display*/
     margin-bottom: -4px;/*tirando o e spaçamento do display*/
     display: inline-block;
