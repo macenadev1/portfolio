@@ -23,7 +23,7 @@ html,body{
 }
 
 header.header1{
-	background: linear-gradient(to right,#0099cc ,#006080 );
+	background: #2f3559;
 	padding-top: 106px;
 }
 
@@ -132,12 +132,8 @@ header section.titulo{
 }
 
 main.main1{
-	width: 100%;
-	background-image: url(images/trabalho.jpg);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-
+	background-color: #e6d8cb;
+	border-bottom: 2px solid black;
 }
 .text{
 	width: 100%;
@@ -179,14 +175,7 @@ article p {
 	width: 64px;
 }
 main.main2{
-	width: 100%;
-	/*background-color: rgba(92, 122, 214,0.1);
-	background-image: linear-gradient(to right, blue, #ccc);*/
-	background-image: url(images/trabalho.jpg);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	border-top: 1px solid #ccc;
+	background-color: #e6d8cb;
 }
 .flecha{
 	position: relative;
@@ -203,7 +192,7 @@ header.header-projetos h3{
 	color:#404040;
 	font-size: 30px;
 	font-family: 'Roboto Slab', serif;
-	padding-top: 113px;
+	padding-top: 50px;
 }
 
 .article-projetos section{
@@ -212,7 +201,7 @@ header.header-projetos h3{
     margin-bottom: -4px;/*tirando o e spaçamento do display*/
     display: inline-block;
     text-align: center;
-    padding-top: 113px;
+    padding-top: 50px;
 }
 .article-projetos div.imgs{
 	padding-top: 10%;
@@ -277,20 +266,18 @@ header.header-projetos h3{
 	text-align: center;
 }
 
-
 footer{
 	border-top: 1px solid #CCCCCC;
 	padding: 30px;
+	background-color: #9a5071;
 }
-
 
 section.box section{
 	width: 33.33%;
-	margin-right: -4px;/*tirando o espaçamento do display*/
+	margin-right: -4px;
 	margin-bottom: -4px;
     display: inline-block;
     text-align: center;
-
 }
 .copy h3{
 	font-size: 14px;

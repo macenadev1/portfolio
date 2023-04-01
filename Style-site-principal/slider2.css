@@ -20,7 +20,7 @@ html,body{
 }
 
 header.header1{
-	background: linear-gradient(to right,#0099cc ,#006080 );
+	background-color: #2f3559;
 	padding-top: 106px; 
 	border-bottom: 1px solid #CCCCCC;
 }
