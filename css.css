@@ -18,6 +18,49 @@ html,body{
     font-style: normal;
 
 }
+
+.link:hover{
+	background-color: #4770EB;
+}
+
+#check:checked ~ .barra2{
+	transform: translateX(300px);
+}
+
+#check:checked ~ .barra2 nav a .link{
+	opacity: 1;
+	margin-top: 0;
+	transition-delay: .2s;
+}
+#Apresentacao:focus{
+	transition-delay: .2s;
+}
+
+header.header2{
+	padding-top: 196px;
+	background-color: #006080;
+	border-top: 1px solid #CCCCCC;
+}
+
+header.header2{
+	animation-name: example;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes example{
+	form {backgorund-color:#006080;}
+	to {background-color:#0099cc;}
+}
+
+.sub-menu-esquerda{
+	float: left;
+}
+
+.sub-menu-direita{
+	float: right;
+}
+
 .clear{
 	clear: both;
 }
