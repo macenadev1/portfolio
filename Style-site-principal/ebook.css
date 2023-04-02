@@ -25,11 +25,15 @@
 .box2 {
     background-color: #9c667d;
     width: 75%;
-    overflow:auto;
+    overflow: auto;
     text-align: center;
 }
 
-#ebook{
+.text > p{
+    padding: 15px;
+}
+
+#ebook {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -37,38 +41,57 @@
     width: 100%;
 }
 
-#tituloEbook{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#tituloEbook {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
     text-align: center;
     color: #e3e1b1;
 }
 
-#texto{
+.meu-botao {
+    background-color: #3b5274;
+    /* cor de fundo do botão */
+    border: none;
+    /* remove a borda */
+    color: white;
+    /* cor do texto */
+    padding: 10px 20px;
+    /* espaço interno do botão */
     text-align: center;
-    color: black;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* alinhamento do texto */
+    text-decoration: none;
+    /* remove sublinhado do texto */
+    display: inline-block;
+    /* exibe como um elemento em linha */
+    font-size: 16px;
+    /* tamanho da fonte */
+    cursor: pointer;
+    /* muda o cursor para a mãozinha */
+    border-radius: 4px;
+    /* define o raio das bordas */
+    transition: background-color 0.3s ease;
+    /* transição de cor de fundo */
     padding: 15px;
+    margin: 20px;
+}
+
+.meu-botao:hover {
+    background-color: #3b5274;
+    /* cor de fundo ao passar o mouse */
+    opacity: .8;
 }
 
 
-.meu-botao {
-    background-color: #3b5274; /* cor de fundo do botão */
-    border: none; /* remove a borda */
-    color: white; /* cor do texto */
-    padding: 10px 20px; /* espaço interno do botão */
-    text-align: center; /* alinhamento do texto */
-    text-decoration: none; /* remove sublinhado do texto */
-    display: inline-block; /* exibe como um elemento em linha */
-    font-size: 16px; /* tamanho da fonte */
-    cursor: pointer; /* muda o cursor para a mãozinha */
-    border-radius: 4px; /* define o raio das bordas */
-    transition: background-color 0.3s ease; /* transição de cor de fundo */
-    padding: 15px;
-    margin: 20px;
-  }
-  
-  .meu-botao:hover {
-    background-color: #3b5274; /* cor de fundo ao passar o mouse */
-    opacity: .8;
-  }
+
+@media screen and (max-width: 807px) {
+    .text {
+        margin: 0 auto;
+        padding: 0 5%;
+    }
+
+    .text p {
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+    }
+}
